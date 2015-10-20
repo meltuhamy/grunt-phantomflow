@@ -17,6 +17,7 @@ module.exports = function ( grunt ) {
 			mismatchTolerance: grunt.option('mismatchTolerance'),
 			earlyExit: grunt.option( 'earlyexit' ),
 			novisuals: grunt.option( 'novisuals' ),
+			grunt: grunt
 		};
 
 		var phantomflow = require( 'phantomflow' ).init( _.defaults( overrides, this.data ) );
